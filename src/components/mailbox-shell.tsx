@@ -56,7 +56,7 @@ const CLAUDE_INBOX_LABEL = "Claude Inbox";
 const AUTO_REFRESH_INTERVAL_MS = 60_000;
 const MESSAGES_URL = "/api/messages";
 const ACCOUNT_AVATAR_URL =
-  "https://api.dicebear.com/9.x/lorelei-neutral/svg?seed=Mail%20Gate&backgroundColor=f5f5f5";
+  "https://api.dicebear.com/9.x/notionists/svg?seed=mail-gate&backgroundColor=ffffff&backgroundType=solid";
 const EMAIL_SHADOW_BASE_STYLES = `
   :host {
     color: #0a0a0a;
@@ -337,12 +337,12 @@ function RailAccountMenu({ accountEmail }: { accountEmail: string }) {
       <DropdownMenuTrigger asChild>
         <button
           aria-label="Account menu"
-          className="flex size-8 items-center justify-center rounded-md outline-none transition-colors hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus:outline-none focus-visible:outline-none focus-visible:ring-0 data-[state=open]:bg-sidebar-accent"
+          className="flex size-8 items-center justify-center rounded-md outline-none transition-colors hover:scale-100 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus:outline-none focus-visible:outline-none focus-visible:ring-0 active:scale-100 data-[state=open]:scale-100 data-[state=open]:bg-sidebar-accent"
           type="button"
         >
           <span
             aria-hidden="true"
-            className="size-7 rounded-md bg-cover bg-center bg-no-repeat"
+            className="size-7 shrink-0 rounded-md border border-border/80 bg-background bg-cover bg-center bg-no-repeat transition-none"
             style={{ backgroundImage: `url(${ACCOUNT_AVATAR_URL})` }}
           />
         </button>
