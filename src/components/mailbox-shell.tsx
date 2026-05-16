@@ -337,7 +337,7 @@ function RailAccountMenu({ accountEmail }: { accountEmail: string }) {
       <DropdownMenuTrigger asChild>
         <button
           aria-label="Account menu"
-          className="flex size-8 items-center justify-center rounded-md outline-none transition-colors hover:scale-100 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus:outline-none focus-visible:outline-none focus-visible:ring-0 active:scale-100 data-[state=open]:scale-100 data-[state=open]:bg-sidebar-accent"
+          className="flex size-8 items-center justify-center rounded-md outline-none transition-none hover:scale-100 focus:outline-none focus-visible:outline-none focus-visible:ring-0 active:scale-100 data-[state=open]:scale-100"
           type="button"
         >
           <span
