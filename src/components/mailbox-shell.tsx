@@ -363,8 +363,8 @@ function RailAccountMenu({ accountEmail }: { accountEmail: string }) {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <form action={logoutAction}>
-          <DropdownMenuItem asChild>
-            <button className="w-full" type="submit">
+          <DropdownMenuItem asChild className="cursor-pointer">
+            <button className="w-full cursor-pointer" type="submit">
               <LogOutIcon aria-hidden="true" />
               Sign out
             </button>
